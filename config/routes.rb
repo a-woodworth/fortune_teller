@@ -11,14 +11,15 @@ Rails.application.routes.draw do
   get("/zodiacs/new", { :controller => "zodiacs", :action => "new_form" })
   get("/create_zodiac", { :controller => "zodiacs", :action => "create" })
 
+  # Route for editing
+  get("/zodiacs/edit", { :controller => "zodiacs", :action => "edit" })
+
   # Routes for reading Zodiacs (READ)
   get("/all_zodiacs", { :controller => "zodiacs", :action => "index" })
   get("/zodiacs/:id", { :controller => "zodiacs", :action => "show" })
 
   get("/signs/:the_sign",         { :controller => "zodiacs", :action => "sign" })
   get("/creatures/:the_creature", { :controller => "zodiacs", :action => "creature" })
-
-
 
 end
 

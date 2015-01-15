@@ -1,3 +1,10 @@
 <h1>All Zodiacs</h1>
 
-<%= debug(@list_of_zodiacs) %>
+<% @list_of_zodiacs.each do |zodiac| %>
+  <p>
+    <%= zodiac.id %>
+    <%= zodiac.sign %>
+    <%= zodiac.creature %>
+    <%= zodiac.fortune %>
+  </p>
+<% end %>
