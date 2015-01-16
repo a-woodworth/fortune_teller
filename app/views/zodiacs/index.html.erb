@@ -1,10 +1,19 @@
-<h1>All Zodiacs</h1>
-
-<% @list_of_zodiacs.each do |zodiac| %>
-  <p>
-    <%= zodiac.id %>
-    <%= zodiac.sign %>
-    <%= zodiac.creature %>
-    <%= zodiac.fortune %>
-  </p>
-<% end %>
+<div class="panel panel-default">
+  <h1 class="panel-heading">All Zodiacs</h1>
+  <table class="table">
+    <tr>
+      <th>#</th>
+      <th>Sign</th>
+      <th>Creature</th>
+      <th>Fortune</th>
+    </tr>
+    <% @list_of_zodiacs.each do |zodiac| %>
+    <tr>
+      <td><%= zodiac.id %></td>
+      <td><%= zodiac.sign %></td>
+      <td><%= zodiac.creature %></td>
+      <td><%= zodiac.fortune %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>

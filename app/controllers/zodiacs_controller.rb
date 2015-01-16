@@ -37,4 +37,11 @@ class ZodiacsController < ApplicationController
   def edit
   end
 
+  def delete
+    id = params[:id]
+    z = Zodiac.all
+    z.destroy(id)
+
+    redirect_to '/all_zodiacs'
+  end
 end

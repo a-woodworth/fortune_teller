@@ -1,1 +1,14 @@
-<%= @zodiac.sign %>
+<div class="row">
+  <div class="col-md-12">
+    <div class="well">
+      <h2><%= @zodiac.sign %><small>, <%= @zodiac.creature %></small></h2>
+      <p class="lead">Fortune: <%= @zodiac.fortune %></p>
+      <p>Zodiac ID Number = <%= @zodiac.id %></p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <button type="button" class="btn btn-warning btn-lg btn-block">Edit</button>
+  </div>
+</div>
